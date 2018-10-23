@@ -1,14 +1,10 @@
-# Front End Workflow [![Build Status](https://travis-ci.org/phivh/front-end-workflow.svg?branch=master)](https://travis-ci.org/phivh/front-end-workflow)
-
-A Front End Workflow With Gulp Task Runner
-
 # Installation
 
 Clone this git
 
  ```sh
   git init
-  git clone https://github.com/phivh/front-end-workflow.git
+  git remote add origin https://github.com/Nuzairb/adventure-portfolio.git
   ```
 Nex step open your cmd and type
 
