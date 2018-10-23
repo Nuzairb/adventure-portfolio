@@ -1,0 +1,42 @@
+{
+  "name": "front-end-workflow",
+  "version": "1.0.1",
+  "description": "FrontEnd Workflow With Gulp Task Runner",
+  "main": "Gulpfile.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/phivh/front-end-workflow.git"
+  },
+  "keywords": [
+    "gulp",
+    "html",
+    "css"
+  ],
+  "author": "Brian Vo <phivhnet@gmail.com> (http://p-programmer.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/phivh/front-end-workflow/issues"
+  },
+  "homepage": "https://github.com/phivh/front-end-workflow#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmltidy": "^0.2.3",
+    "gulp-imagemin": "^3.2.0",
+    "gulp-jslint": "^1.0.10",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-uglify": "^2.1.2",
+    "imagemin-pngquant": "^5.0.0"
+  },
+  "dependencies": {
+    "mocha": "^3.3.0"
+  }
+}
