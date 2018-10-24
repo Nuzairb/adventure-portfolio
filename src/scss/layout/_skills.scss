@@ -1,0 +1,44 @@
+.my-skills {
+    width: 100%;
+    height: 30rem;
+    background: red;
+    &__heading {
+        color: $white;
+    }
+}
+
+.bars {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    &__bar {
+        margin: 0px auto;
+    }
+}
+
+.progress-bar {
+    background: #DEE2E3;
+    border-radius: 99px;
+    width: 300px;
+    height: 10px;
+    position: relative;
+    overflow: hidden;
+    &::before {
+        border-radius: 99px;
+        position: absolute;
+        height: 10px;
+        background: #1E9EF6;
+        content: '';
+        width: 0;
+        transition: width .2s;
+    }
+}
+
+$start: 1;
+$end: 10;
+@for $i from $start through $end {
+    $i: 10 * $i;
+    .progress-bar-#{$i}::before {
+        width: $i * 1%
+    }
+}
