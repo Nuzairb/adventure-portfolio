@@ -93,3 +93,12 @@ ORDER: Base + typography > general layout + grid > page layout > components
         ; //1800
     }
 }
+
+$start: 1;
+$end: 10;
+@for $i from $start through $end {
+    $i: 10 * $i;
+    .progress-bar-#{$i}::before {
+        width: $i * 1%
+    }
+}
