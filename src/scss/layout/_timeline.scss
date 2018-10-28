@@ -36,18 +36,22 @@ $timeline-color: $primary-color;
     }
 }
 
+.orange {
+    background: $carnation !important;
+}
+
 .timeline {
     width: 100%;
-    margin: 60px auto;
+    margin: 30px auto;
     position: relative;
     padding: 0 10px;
     @include prefix(transition, all .4s ease);
     &:before {
         content: "";
-        width: 3px;
+        width: 2px;
         height: 100%;
         background: $timeline-color;
-        left: 20.5%;
+        left: 20.7%;
         top: 0;
         position: absolute;
     }
@@ -62,7 +66,7 @@ $timeline-color: $primary-color;
         position: relative;
         @extend %clearfix;
         .timeline-icon {
-            background: $timeline-color;
+            background: $mulberry;
             width: 50px;
             height: 50px;
             position: absolute;
@@ -78,7 +82,7 @@ $timeline-color: $primary-color;
             }
         }
         .timeline-content {
-            border: 1.5px solid $timeline-color;
+            border: 1px solid $timeline-color;
             width: 75%;
             background: transparent;
             padding: 20px;
@@ -86,10 +90,10 @@ $timeline-color: $primary-color;
             @include prefix(border-radius, 5px);
             @include prefix(transition, all .3s ease);
             h2 {
-                padding: 12px;
-                background: $timeline-color;
-                color: #fff;
-                margin: -20px -20px 0 -20px;
+                font-size: 24px;
+                padding: 1px;
+                background: transparent;
+                margin: -18px -18px 0 -18px;
                 font-weight: 300;
                 @include prefix(border-radius, 3px 3px 0 0);
             }
