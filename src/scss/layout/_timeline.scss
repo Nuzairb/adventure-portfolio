@@ -1,0 +1,109 @@
+// variables - colors
+$main-text: #7f8c97; // main text
+$link: #acb7c0; // anchor tags
+$background: #e9f0f5; // body background color
+$color-1: #303e49; // blue dark
+$color-2: #c03b44; // red
+$color-3: #ffffff; // white
+$color-4: #75ce66; // green
+$color-5: #f0ca45; // yellow
+// variables - fonts 
+$primary-font: 'Droid Serif',
+serif;
+$secondary-font: 'Open Sans',
+sans-serif;
+// mixins - rem fallback - credits: http://zerosixthree.se/
+@function calculateRem($size) {
+    $remSize: $size / 16px;
+    @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+    font-size: $size;
+    font-size: calculateRem($size);
+}
+
+// mixins - border radius
+@mixin border-radius($radius:.25em) {
+    border-radius: $radius;
+}
+
+// layout - breakpoints
+$S: 320px;
+$M: 768px;
+$L: 1170px;
+// layout - media queries
+@mixin MQ($canvas) {
+    @if $canvas==S {
+        @media only screen and (min-width: $S) {
+            @content;
+        }
+    }
+    @else if $canvas==M {
+        @media only screen and (min-width: $M) {
+            @content;
+        }
+    }
+    @else if $canvas==L {
+        @media only screen and (min-width: $L) {
+            @content;
+        }
+    }
+}
+
+.cd-container {
+    width: 90%;
+    max-width: $L;
+    margin: 0 auto;
+    &::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+.cd-timeline {
+    position: relative;
+    padding: 2em 0;
+    margin: {
+        top: 2em;
+        bottom: 2em;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 18px;
+        height: 100%;
+        width: 4px;
+        background: darken($background, 5%);
+    }
+    @include MQ(L) {
+        margin: {
+            top: 3em;
+            bottom: 3em;
+        }
+        &::before {
+            left: 50%;
+            margin-left: -2px;
+        }
+    }
+}
+
+.cd-timeline-block {
+    position: relative;
+    margin: 2em 0;
+    @include clearfix;
+    &:first-child {
+        margin-top: 0;
+    }
+    @include MQ(L) {
+        margin: 4em 0;
+        &:first-child {
+            margin-top: 0;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

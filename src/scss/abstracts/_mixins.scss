@@ -102,3 +102,14 @@ $end: 10;
         width: $i * 1%
     }
 }
+
+// Timeline Indecator Mixin 
+@mixin timeline-indicator {
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    position: absolute;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
