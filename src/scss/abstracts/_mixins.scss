@@ -113,3 +113,12 @@ $end: 10;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
 }
+
+// Timeline Entry 
+@mixin timeline-entry {
+    @for $i from 1 to 5 {
+        &:nth-child(#{$i}) {
+            grid-area: entry#{$i};
+        }
+    }
+}

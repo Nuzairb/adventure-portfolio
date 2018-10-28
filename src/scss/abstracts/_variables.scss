@@ -54,6 +54,11 @@ $sail: #A4CDF7;
 $malibu: #77B5F4;
 $carnation: #FF535E;
 $pink-salmon: #FF8B91;
+/// Timeline-colors
+//- Variables
+$timeline-indicator-color: $mulberry;
+$timeline-indicator-border: 1px solid $cornflower-blue;
+$timeline-title-background-color: $deep-blush;
 /// Copy text color
 /// @type Color
 $text-color: rgb(34, 34, 34) !default;
