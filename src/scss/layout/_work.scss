@@ -1,0 +1,20 @@
+.box {
+    border-radius: 3px;
+    background-color: $black-russian;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.06);
+}
+
+.work {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 238px;
+    grid-gap: 15px;
+}
+
+.tall-span {
+    grid-row: span 2;
+}
+
+.wide-span {
+    grid-column: span 2
+}
