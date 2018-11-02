@@ -1,9 +1,40 @@
 .client-feedback {
-    .profile {}
+    position: relative;
+    .profile {
+        width: 350px;
+        height: 350px;
+        background-image: url(../../images/client.jpg);
+        background-position: center;
+        z-index: 1;
+        position: absolute;
+        border: 10px solid $carnation;
+    }
 }
 
 .user-detail {
-    &__name {}
-    &__job {}
-    &__text {}
+    background-color: $black-russian;
+    height: 350px;
+    width: 1000px;
+    color: $white;
+    padding: 20px 50px;
+    margin-top: 50px;
+    z-index: -1;
+    position: relative;
+    left: 5%;
+    &__name {
+        position: relative;
+        left: 35%;
+    }
+    &__job {
+        position: relative;
+        left: 35%;
+    }
+    &__text {
+        position: relative;
+        left: 35%;
+    }
+    &__btn {
+        position: relative;
+        left: 35%;
+    }
 }
