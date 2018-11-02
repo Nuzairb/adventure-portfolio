@@ -36,7 +36,7 @@
         position: relative;
         left: 37%;
         font-weight: 100;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         max-width: 600px;
         line-height: 1.4;
         position: relative;
@@ -57,12 +57,16 @@
         }
         &::after {
             content: '”';
-            right: 3rem;
-            bottom: -1rem;
+            right: 2.1rem;
+            bottom: -1.4rem;
         }
     }
     &__btn {
         position: relative;
         left: 35%;
+        margin: 40px 20px;
+        button {
+            margin-right: 20px;
+        }
     }
 }
