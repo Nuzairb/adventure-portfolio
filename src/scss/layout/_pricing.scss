@@ -10,8 +10,52 @@
         background: $white;
         padding: 20px;
         text-align: center;
-        &--1 {}
-        &--2 {}
-        &--3 {}
+        border-radius: 10px;
+        h3 {
+            font-weight: 300;
+        }
+        h2 {
+            font-weight: 400;
+            font-size: 50px;
+        }
+        button {
+            margin: 10px;
+        }
+        &--1 {
+            color: $mulberry;
+            h3 {
+                color: $black;
+            }
+            button {
+                background: $mulberry;
+            }
+            p {
+                color: $black;
+            }
+        }
+        &--2 {
+            color: $gigas;
+            h3 {
+                color: $black;
+            }
+            button {
+                background: $gigas;
+            }
+            p {
+                color: $black;
+            }
+        }
+        &--3 {
+            color: $mulberry;
+            h3 {
+                color: $black;
+            }
+            button {
+                background: $mulberry;
+            }
+            p {
+                color: $black;
+            }
+        }
     }
 }
