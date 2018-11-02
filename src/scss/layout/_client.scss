@@ -3,11 +3,11 @@
     .profile {
         width: 350px;
         height: 350px;
-        background-image: url(../../images/client.jpg);
+        background-image: url(../../images/pexels-photo-1011529.jpeg);
         background-position: center;
         z-index: 1;
         position: absolute;
-        border: 10px solid $carnation;
+        border: 10px solid $cornflower-blue;
     }
 }
 
@@ -24,14 +24,42 @@
     &__name {
         position: relative;
         left: 35%;
+        margin: 0;
     }
     &__job {
+        margin: 0;
         position: relative;
         left: 35%;
     }
-    &__text {
+    &__quote {
+        margin: 50px 0;
         position: relative;
-        left: 35%;
+        left: 37%;
+        font-weight: 100;
+        font-size: 1.2rem;
+        max-width: 600px;
+        line-height: 1.4;
+        position: relative;
+        margin: 3rem 0;
+        padding: 0rem;
+        &::before,
+        &::after {
+            position: absolute;
+            color: #f1efe6;
+            font-size: 6rem;
+            width: 4rem;
+            height: 4rem;
+        }
+        &::before {
+            content: '“';
+            left: -3rem;
+            top: -3rem;
+        }
+        &::after {
+            content: '”';
+            right: 3rem;
+            bottom: -1rem;
+        }
     }
     &__btn {
         position: relative;
